@@ -24,8 +24,8 @@ import {
   ChevronRight
 } from 'lucide-react';
 import RiseveraLogo from './RiseveraLogo';
-const heroDashboardImg = "/src/assets/images/riservera_h.png";
-const stepsWorkflowImg = "/src/assets/images/steps_workflow_1781186040393.png";
+import heroDashboardImg from '../assets/images/riservera_h.png';
+import stepsWorkflowImg from '../assets/images/steps_workflow_1781186040393.png';
 
 interface LandingViewProps {
   onStart: () => void;

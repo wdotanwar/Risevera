@@ -1,12 +1,11 @@
 import { CSSProperties } from 'react';
+import logoColor from '../assets/images/logo_color.png';
+import logoInverted from '../assets/images/logo_inverted.png';
 
 interface RiseveraLogoProps {
   className?: string;
   isDarkBackground?: boolean;
 }
-
-const logoColor = "/src/assets/images/logo_color.png";
-const logoInverted = "/src/assets/images/logo_inverted.png";
 
 export default function RiseveraLogo({
   className = "h-8 w-8",

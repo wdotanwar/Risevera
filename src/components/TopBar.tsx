@@ -6,9 +6,10 @@ interface TopBarProps {
   onNavigate: (screen: ScreenId) => void;
   textSize: 'normal' | 'large' | 'xlarge';
   onChangeTextSize: (size: 'normal' | 'large' | 'xlarge') => void;
+  currentUser: { email: string; name: string; plan: string } | null;
 }
 
-export default function TopBar({ onMenuToggle, onNavigate, textSize, onChangeTextSize }: TopBarProps) {
+export default function TopBar({ onMenuToggle, onNavigate, textSize, onChangeTextSize, currentUser }: TopBarProps) {
   return (
     <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-slate-200 bg-white px-6 shadow-sm">
       {/* Search & Mobile Toggle */}
@@ -99,8 +100,8 @@ export default function TopBar({ onMenuToggle, onNavigate, textSize, onChangeTex
         {/* User Stats Pill */}
         <div className="flex items-center gap-3">
           <div className="text-right hidden sm:block">
-            <span className="block text-xs font-semibold text-slate-800">Muhammad Suleman</span>
-            <span className="block text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Professional Account</span>
+            <span className="block text-xs font-semibold text-slate-800">{currentUser ? currentUser.name : 'Guest Partner'}</span>
+            <span className="block text-[10px] text-slate-400 uppercase tracking-wider font-semibold">{currentUser ? currentUser.plan : 'Guest Account'}</span>
           </div>
 
           {/* New Analysis CTA Button */}

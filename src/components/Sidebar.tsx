@@ -20,6 +20,7 @@ interface SidebarProps {
   onClose: () => void;
   onLogout: () => void;
   onStartSpecificWizard: (type: 'New Product Launch' | 'Channel Rescue' | 'Global Expansion') => void;
+  currentUser: { email: string; name: string; plan: string } | null;
 }
 
 export default function Sidebar({
@@ -28,7 +29,8 @@ export default function Sidebar({
   isOpen,
   onClose,
   onLogout,
-  onStartSpecificWizard
+  onStartSpecificWizard,
+  currentUser
 }: SidebarProps) {
   const menuItems = [
     {
@@ -134,13 +136,13 @@ export default function Sidebar({
         <div className="px-5 py-4 border-b border-slate-800 bg-slate-900/10">
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-slate-300">
-              MS
+              {currentUser ? currentUser.name.trim().split(/\s+/).map(n => n[0]).join('').slice(0, 2).toUpperCase() : 'G'}
             </div>
             <div className="min-w-0 flex-1">
-              <h4 className="text-xs font-semibold text-white truncate">Muhammad S.</h4>
+              <h4 className="text-xs font-semibold text-white truncate">{currentUser ? currentUser.name : 'Guest Partner'}</h4>
               <p className="text-[11px] text-slate-500 flex items-center gap-1 mt-0.5">
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#F07125]" />
-                Professional Plan
+                {currentUser ? currentUser.plan : 'Guest Account'}
               </p>
             </div>
           </div>

@@ -12,10 +12,32 @@ import SavedAnalysesView from './components/SavedAnalysesView';
 import ReportView from './components/ReportView';
 import SubscriptionView from './components/SubscriptionView';
 import SettingsView from './components/SettingsView';
+import LoginView from './components/LoginView';
+
+interface UserSession {
+  email: string;
+  name: string;
+  plan: string;
+}
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState<ScreenId>('landing');
+  const [currentScreen, setCurrentScreen] = useState<ScreenId>(() => {
+    return localStorage.getItem('risevera_active_session') ? 'dashboard' : 'landing';
+  });
   const [savedAnalyses, setSavedAnalyses] = useState<SavedAnalysis[]>(INITIAL_SAVED_ANALYSES);
+  
+  // User Session State (Loads securely from localStorage if present)
+  const [currentUser, setCurrentUser] = useState<UserSession | null>(() => {
+    const saved = localStorage.getItem('risevera_active_session');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  });
   
   // Accessibility text size state
   const [textSize, setTextSize] = useState<'normal' | 'large' | 'xlarge'>(() => {
@@ -143,12 +165,17 @@ export default function App() {
   };
 
   const handleLogout = () => {
+    localStorage.removeItem('risevera_active_session');
+    setCurrentUser(null);
     setCurrentScreen('landing');
   };
 
   const handleStartFromLanding = () => {
-    // Dispatches user straight into Dashboard
-    handleNavigate('dashboard');
+    if (currentUser) {
+      handleNavigate('dashboard');
+    } else {
+      handleNavigate('login');
+    }
   };
 
   const handleViewSampleReport = () => {
@@ -168,6 +195,19 @@ export default function App() {
     );
   }
 
+  // Render Secure Login Gateway
+  if (currentScreen === 'login') {
+    return (
+      <LoginView
+        onLoginSuccess={(user) => {
+          setCurrentUser(user);
+          setCurrentScreen('dashboard');
+        }}
+        onBackToLanding={() => setCurrentScreen('landing')}
+      />
+    );
+  }
+
   // App Master layout wrapper for logged-in screens
   return (
     <div id="master-layout" className="flex h-screen w-screen bg-[#f1f5f9] overflow-hidden font-sans">
@@ -180,6 +220,7 @@ export default function App() {
         onClose={() => setSidebarOpen(false)}
         onLogout={handleLogout}
         onStartSpecificWizard={handleStartWizardType}
+        currentUser={currentUser}
       />
 
       {/* Main Container */}
@@ -191,6 +232,7 @@ export default function App() {
           onNavigate={handleNavigate}
           textSize={textSize}
           onChangeTextSize={setTextSize}
+          currentUser={currentUser}
         />
 
         {/* Dynamic Main Canvas View wrapper */}

@@ -49,6 +49,8 @@ export interface SavedAnalysis {
 
 export type ScreenId =
   | 'landing'
+  | 'login'
+  | 'register'
   | 'dashboard'
   | 'wizard'
   | 'results'

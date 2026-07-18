@@ -130,7 +130,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
         <div className="flex items-center gap-2">
           <RiseveraLogo className="h-8 w-8" isDarkBackground={false} />
           <div>
-            <span className="text-base font-bold tracking-tight text-[#1D2F5C]">RISEVERA</span>
+            <span className="text-base font-bold tracking-tight text-[#1D2F5C]">RISEVERA GLOBAL</span>
             <span className="block text-[8px] font-bold text-[#F07125] uppercase tracking-widest leading-none">
               Channel Intelligence
             </span>
@@ -188,7 +188,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1D2F5C] tracking-tight leading-[1.08]">
               Fueling the Next <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F07125] to-orange-500">
+              <span className="text-[#F07125]">
                 E-Commerce Era.
               </span>
             </h1>
@@ -224,7 +224,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
                 <span className="h-8 w-8 rounded-full border-2 border-white bg-rose-500 flex items-center justify-center text-[10px] font-bold text-white uppercase ring-1 ring-slate-200">MS</span>
               </div>
               <div className="text-left leading-none">
-                <span className="block text-sm font-black text-slate-900 font-mono tracking-wider">12,400+</span>
+                <span className="block text-sm font-black text-slate-900 font-mono tracking-wider">20+</span>
                 <span className="text-[10px] text-slate-550 font-bold font-mono uppercase">UK Merchants Scored</span>
               </div>
             </div>
@@ -268,12 +268,12 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
             01 // About Us
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1D2F5C] tracking-tight">
-            The Story of Risevera.
+            The Story of Risevera Global.
           </h2>
           
           {/* Custom paragraph with beautiful custom badges inlined as specified in VoltPeak */}
           <div className="text-lg sm:text-2xl text-slate-800 leading-[1.35] max-w-3xl mx-auto font-normal text-center select-none pt-4">
-            <span className="font-extrabold text-slate-900 font-serif">Risevera</span> was founded on a simple mission: to eliminate launch anxiety{' '}
+            <span className="font-extrabold text-slate-900 font-serif">Risevera Global</span> was founded on a simple mission: to eliminate launch anxiety{' '}
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-orange-100 text-[#F07125] text-sm font-semibold border border-orange-200">
               📊 Multi-Channel Data
             </span>{' '}
@@ -342,7 +342,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
               <div className="w-full max-w-[340px] rounded-2xl bg-white p-1.5 shadow-xl border border-slate-200/80 overflow-hidden transition-all hover:scale-[1.02] hover:shadow-2xl">
                 <img 
                   src={stepsWorkflowImg} 
-                  alt="Risevera 6 Steps Launch Workflow Infographic" 
+                  alt="Risevera Global 6 Steps Launch Workflow Infographic" 
                   className="w-full h-auto rounded-xl object-contain select-none"
                   referrerPolicy="no-referrer"
                 />
@@ -395,7 +395,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
               Why Choose Us: <br className="sm:hidden" /> Your Complete Channel Solution.
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 max-w-xl mx-auto font-normal leading-relaxed">
-              Why do professional merchants trust Risevera? Because we eliminate costly, unvalidated product experiment trial loops entirely by scanning real market conditions.
+              Why do professional merchants trust Risevera Global? Because we eliminate costly, unvalidated product experiment trial loops entirely by scanning real market conditions.
             </p>
           </div>
 
@@ -740,7 +740,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
               06 // VERIFIED RESULTS
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1D2F5C] tracking-tight">
-              The Risevera Community
+              The Risevera Global Community
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 max-w-xl mx-auto font-normal leading-relaxed">
               We measure our platform success purely by merchant ROI. See how our pre-launch algorithms helped eliminate launch waste and expand securely.
@@ -759,7 +759,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
                   <Star className="h-4 w-4 fill-current" />
                 </div>
                 <p className="text-xs text-slate-650 leading-relaxed font-normal italic">
-                  "I was seconds away from purchasing £14,000 of bamboo tableware stock. Ran the Risevera assessment, the score flagged extreme competitor squeeze on Amazon UK. We pivoted the initial batch to Etsy, we went break-even inside 3 days!"
+                  "I was seconds away from purchasing £14,000 of bamboo tableware stock. Ran the Risevera Global assessment, the score flagged extreme competitor squeeze on Amazon UK. We pivoted the initial batch to Etsy, we went break-even inside 3 days!"
                 </p>
               </div>
               <div className="flex items-center gap-3 pt-4 border-t border-slate-50">
@@ -781,7 +781,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
                   <Star className="h-4 w-4 fill-current" />
                 </div>
                 <p className="text-xs text-slate-650 leading-relaxed font-normal italic">
-                  "As an international shipper landing items from overseas, calculating custom duty compliance is a constant puzzle. Risevera streamlines the whole target postage and depot postal routing validation. Transparent fit indexes."
+                  "As an international shipper landing items from overseas, calculating custom duty compliance is a constant puzzle. Risevera Global streamlines the whole target postage and depot postal routing validation. Transparent fit indexes."
                 </p>
               </div>
               <div className="flex items-center gap-3 pt-4 border-t border-slate-50">
@@ -857,10 +857,10 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
               },
               {
                 q: "Do I need real merchant API keys or seller tokens to test it?",
-                a: "Absolutely not. Risevera is built specifically to assist *pre-launch* strategy planning. Simply provide estimated unit metrics (weights, raw category, margins) and our scrapers construct comparative fits without requiring deep platform account credentials."
+                a: "Absolutely not. Risevera Global is built specifically to assist *pre-launch* strategy planning. Simply provide estimated unit metrics (weights, raw category, margins) and our scrapers construct comparative fits without requiring deep platform account credentials."
               },
               {
-                q: "How does customs duty and tax forecasting operate on Risevera?",
+                q: "How does customs duty and tax forecasting operate on Risevera Global?",
                 a: "When inserting registered company country structures (UK, international), the algorithm auto-applies standard HMRC VAT logic rules and custom import margins directly, so estimated margins reflect reality."
               },
               {
@@ -910,7 +910,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
             
             <div className="space-y-2">
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                Sign Up to Received <br className="sm:hidden" /> Risevera News
+                Sign Up to Receive <br className="sm:hidden" /> Risevera Global News
               </h2>
               <p className="text-xs text-slate-500 font-normal">
                 Join 5,000+ top UK retail brands. No spam, just fresh scrape summaries, regulatory alerts, and channel pricing opportunities dispatched weekly.
@@ -955,7 +955,7 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
           <div className="space-y-4 col-span-2 md:col-span-1">
             <div className="flex items-center gap-2">
               <RiseveraLogo className="h-6 w-6" isDarkBackground={false} />
-              <span className="text-sm font-black text-[#1D2F5C] tracking-tight">RISEVERA</span>
+              <span className="text-sm font-black text-[#1D2F5C] tracking-tight">RISEVERA GLOBAL</span>
             </div>
             <p className="text-[11px] leading-relaxed text-slate-405 font-normal">
               Empowering professional SME physical-goods merchants with verified pre-launch channel validation insights. Headquartered in London, England.
@@ -986,12 +986,12 @@ export default function LandingView({ onStart, onViewSample }: LandingViewProps)
               <span className="text-[11px] font-bold font-mono bg-slate-50 p-1 border rounded">FB</span>
               <span className="text-[11px] font-bold font-mono bg-slate-50 p-1 border rounded">TW</span>
             </div>
-            <p className="text-[10px] text-slate-400">support@risevera.com.uk</p>
+            <p className="text-[10px] text-slate-400">support@riseveraglobal.com</p>
           </div>
         </div>
 
         <div className="max-w-6xl w-full mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-normal text-slate-400">
-          <p>© 2026 RISEVERA Ltd. All rights reserved. Registered in England &amp; Wales under Corporate No. 14073352.</p>
+          <p>© 2026 RISEVERA GLOBAL Ltd. All rights reserved. Registered in England &amp; Wales under Corporate No. 14073352.</p>
           <div className="flex gap-4">
             <a href="#about-us" className="hover:underline">Terms of Service</a>
             <span>•</span>

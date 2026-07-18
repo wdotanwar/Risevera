@@ -31,12 +31,12 @@ export default function LoginView({ onLoginSuccess, onBackToLanding }: LoginView
     }
     
     // Check if demo user is present, if not add it, or update its password to rise123vera
-    const demoIndex = users.findIndex((u: any) => u.email === 'demo@risevera.com');
+    const demoIndex = users.findIndex((u: any) => u.email === 'demo@riseveraglobal.com');
     if (demoIndex > -1) {
       users[demoIndex].password = 'rise123vera';
     } else {
       users.push({
-        email: 'demo@risevera.com',
+        email: 'demo@riseveraglobal.com',
         password: 'rise123vera',
         name: 'Demo Partner',
         plan: 'Professional Account',
@@ -160,7 +160,7 @@ export default function LoginView({ onLoginSuccess, onBackToLanding }: LoginView
             <RiseveraLogo className="h-12 w-12" isDarkBackground={true} />
           </div>
           <h2 className="text-2xl font-black text-white tracking-tight">
-            RISEVERA DECISION ENGINE
+            RISEVERA GLOBAL DECISION ENGINE
           </h2>
           <p className="text-[11px] font-bold text-[#F07125] uppercase tracking-widest mt-1">
             Secure Member Gate

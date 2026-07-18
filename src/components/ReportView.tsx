@@ -121,7 +121,7 @@ export default function ReportView({
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-6 border-b border-slate-200 pb-8">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded bg-orange-50 text-[#F07125] font-mono text-[9px] font-bold border border-orange-100/80">
-              RISEVERA DECISION_REPORT // PRIVATE RECORD
+              RISEVERA GLOBAL DECISION_REPORT // PRIVATE RECORD
             </div>
             <h1 className="text-3xl font-black text-slate-950 mt-3 tracking-tight">
               SME Marketplace Channel Fit Report
@@ -132,7 +132,7 @@ export default function ReportView({
           </div>
           <div className="text-right sm:text-right border-t sm:border-t-0 sm:border-l sm:pl-6 border-slate-200 pt-4 sm:pt-0">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block font-mono">Platform Identifier</span>
-            <span className="text-lg font-black text-slate-900 tracking-wider">RISEVERA</span>
+            <span className="text-lg font-black text-slate-900 tracking-wider">RISEVERA GLOBAL</span>
             <span className="block text-[9px] text-[#F07125] uppercase tracking-widest font-bold">Channel Intelligence</span>
           </div>
         </div>
@@ -304,7 +304,7 @@ export default function ReportView({
             10. Appendix: Scoring Methodology
           </h3>
           <p className="text-[11px] leading-relaxed">
-            The Channel Fit Score (CFS) has been calculated using the standardized formulas of the RISEVERA channel intelligence stack. Standard weights adhere strictly to: DSS 30% | CIS 25% | PVI 20% | PSF 15% | MERS 10%. Analysis variables represent prototype data simulations for SME demonstration purposes.
+            The Channel Fit Score (CFS) has been calculated using the standardized formulas of the RISEVERA GLOBAL channel intelligence stack. Standard weights adhere strictly to: DSS 30% | CIS 25% | PVI 20% | PSF 15% | MERS 10%. Analysis variables represent prototype data simulations for SME demonstration purposes.
           </p>
         </section>
 

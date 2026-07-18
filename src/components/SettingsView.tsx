@@ -423,7 +423,7 @@ export default function SettingsView({ onNavigate, textSize, onChangeTextSize }:
             <div className="p-4 bg-slate-50 border border-slate-100 rounded-lg space-y-2">
               <span className="font-bold text-slate-800 text-[11px] block">🛡️ UK GDPR-ready architecture</span>
               <p className="text-slate-500 leading-relaxed text-[10.5px]">
-                RISEVERA protects secret credentials via highly secured tokens logic. Customer transaction logs remain completely localized in the UK.
+                RISEVERA GLOBAL protects secret credentials via highly secured tokens logic. Customer transaction logs remain completely localized in the UK.
               </p>
             </div>
 

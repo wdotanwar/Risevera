@@ -117,7 +117,7 @@ export default function Sidebar({
           <div className="flex items-center gap-2.5">
             <RiseveraLogo className="h-8 w-8" isDarkBackground={true} />
             <div>
-              <span className="text-xl font-semibold tracking-tight text-white leading-none">RISEVERA</span>
+              <span className="text-lg font-bold tracking-tight text-white leading-none">RISEVERA GLOBAL</span>
               <span className="block text-[9px] font-bold text-[#F07125] uppercase tracking-widest leading-none mt-0.5">
                 Channel Intelligence
               </span>

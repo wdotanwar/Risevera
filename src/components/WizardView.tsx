@@ -729,7 +729,7 @@ export default function WizardView({
             </div>
 
             <p className="text-slate-500 font-normal text-xs bg-slate-50 p-3 rounded-lg leading-relaxed">
-              💡 <span className="font-bold text-slate-800 text-[11px]">Note:</span> By executing this calculation, RISEVERA indexes historical category demand ratios, competitor density counts, and relative storage thresholds for each selected platform.
+              💡 <span className="font-bold text-slate-800 text-[11px]">Note:</span> By executing this calculation, RISEVERA GLOBAL indexes historical category demand ratios, competitor density counts, and relative storage thresholds for each selected platform.
             </p>
           </div>
 
@@ -762,7 +762,7 @@ export default function WizardView({
               <Loader2 className="h-8 w-8 stroke-[2.5]" />
             </div>
             <div>
-              <h3 className="text-base font-bold text-slate-900 tracking-tight">RISEVERA Analytical Sandbox Processing</h3>
+              <h3 className="text-base font-bold text-slate-900 tracking-tight">RISEVERA GLOBAL Analytical Sandbox Processing</h3>
               <p className="text-xs text-slate-400 mt-1 uppercase tracking-widest font-mono">CHANNEL_FIT_ENGINE EXECUTION RUN</p>
             </div>
           </div>
@@ -800,7 +800,7 @@ export default function WizardView({
               />
             </div>
             <p className="text-[11px] text-slate-400 mt-4 leading-normal italic font-normal">
-              * Note: Prototype analysis uses simulated marketplace data. In production, RISEVERA will use live marketplace API integrations.
+              * Note: Prototype analysis uses simulated marketplace data. In production, RISEVERA GLOBAL will use live marketplace API integrations.
             </p>
           </div>
         </div>

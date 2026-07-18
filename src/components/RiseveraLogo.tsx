@@ -17,7 +17,7 @@ export default function RiseveraLogo({
     <div className={`relative select-none flex items-center justify-center ${className}`}>
       <img
         src={imgSrc}
-        alt="Risevera Logo"
+        alt="Risevera Global Logo"
         className="w-full h-full object-contain"
         referrerPolicy="no-referrer"
         onError={(e) => {

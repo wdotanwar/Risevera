@@ -223,7 +223,7 @@ export default function SubscriptionView({ onNavigate }: SubscriptionViewProps) 
       </div>
 
       <div className="rounded-xl bg-slate-50 p-4 border border-slate-200 text-xs text-slate-500 leading-normal font-normal text-center">
-        🔒 All RISEVERA transactions are securely routed through pre-synchronized Stripe merchant integrations. Standard UK VAT indices apply at checkout cycles.
+        🔒 All RISEVERA GLOBAL transactions are securely routed through pre-synchronized Stripe merchant integrations. Standard UK VAT indices apply at checkout cycles.
       </div>
     </div>
   );
